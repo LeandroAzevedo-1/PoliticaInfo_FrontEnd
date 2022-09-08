@@ -1,0 +1,8 @@
+@media (max-width: 470px){
+    #telaLogin {
+        width: 90%;
+    }
+    .imageLogo {
+        width: 100%;
+    }
+}

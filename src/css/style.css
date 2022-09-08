@@ -1,0 +1,26 @@
+body {
+    background: linear-gradient( #36a06f,#9fdcbf);
+    width: 100%;
+    height: 100vh;
+}
+#telaLogin {
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.imageLogo{
+    width: 100%;
+}
+.footer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 650px;
+}
+.rodape {
+    font-size: 18px;
+}
