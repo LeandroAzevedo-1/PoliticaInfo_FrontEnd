@@ -1,0 +1,23 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-logo {
+    width: 200px;
+}
+.navbar {
+    display: flex;
+    gap: 0 20px;
+}
+.link-item {
+    font-size: 20px;
+    color: #00000096;
+    transition: 0.3s ease-in-out;
+}
+.link-item:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.54);
+    color:rgba(255, 255, 255, 0.54);
+}
