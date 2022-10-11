@@ -1,8 +1,4 @@
-body {
-    background: linear-gradient( #36a06f,#9fdcbf);
-    width: 100%;
-    height: 100vh;
-}
+
 #telaLogin {
     width: 450px;
     position: absolute;

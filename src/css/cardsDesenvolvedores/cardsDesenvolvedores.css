@@ -1,0 +1,66 @@
+.cards-desenvolvedores {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s ease-in-out;
+
+}
+.card-dev {
+    width: 250px;
+    height: 400px;
+    margin: 0 10px;
+    background-color: rgba(255, 255, 255, 0.733);
+    border-radius: 24px;
+}
+.card-dev:hover {
+    transform: scaleY(1.007);
+}
+.image-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( #36a06f,#9fdcbf);
+    width: 100%;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+.image-develop {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.card-informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.card-informacao .card-title {
+    text-align: center;
+    font-weight: 600;
+    width: 100%;
+}
+.card-text,
+.card-linguagem {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 10px;
+
+}
+.card-text {
+    font-size: 14px;
+}
+.redes-sociais {
+    display: flex;
+    gap: 30px;
+    font-size: 25px;
+}
+.bi-linkedin {
+    color: #0A66C2;
+}

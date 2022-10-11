@@ -1,3 +1,4 @@
+
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +7,12 @@
     text-decoration: none;
     color: #000;
 }
-
+body {
+    background: linear-gradient( #36a06f,#9fdcbf);
+    width: 100%;
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
 a, li {
     text-decoration: none;
     color: #000;

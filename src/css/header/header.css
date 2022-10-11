@@ -1,0 +1,28 @@
+.row {
+    margin: 0;
+}
+.container {
+    padding: 70px 0;
+}
+
+/* Barra de navegacao  */
+#nav-container {
+    padding-top: ;
+    padding-bottom: 0;
+}
+#logo {
+    width: 200px;
+}
+.navbar-brand {
+    padding: 0;
+    color: #fff;
+}
+.navbar-brand:hover {
+    color: #fff;
+}
+#navbar-links a:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
