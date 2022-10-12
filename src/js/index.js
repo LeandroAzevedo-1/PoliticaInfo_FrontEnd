@@ -8,7 +8,7 @@ function deputados() {
 
       var deputadoInfo = await resultDeputados.json();
 
-      console.log(deputadoInfo.dados); //para usar a api do swagger, não precisa o ( dados )
+      //console.log(deputadoInfo.dados); //para usar a api do swagger, não precisa o ( dados )
       deputadoInfo.dados.map((item) => {
 
         let divCol = document.querySelector(".card-wrapper");
@@ -44,4 +44,5 @@ function deputados() {
     })
     .carch((e) => console.log(e));
 }
-console.log(deputados());
+deputados();    //console.log(deputados()); verifico o que esta vindo 
+

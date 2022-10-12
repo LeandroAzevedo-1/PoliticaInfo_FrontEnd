@@ -5,6 +5,16 @@
     margin-top: -20px;
     flex-direction: column;
     margin: 30px 0;
+    font-family: 'Poppins', sans-serif;
+}
+.deputados-ativos {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.819);
+    width: 500px;
+    text-align: center;
+    border-radius: 30px 0 30px 0;
+    padding: 5px 0;
 }
 .container-cards {
     display: flex;
@@ -109,14 +119,6 @@
     color: rgb(71, 125, 71);
     transform: scale(1.1);
 }
-@media screen and (max-width: 768px) {
-    .slide-content {
-        margin: 0 10px;
-    }
-    .swiper-navBtn {
-        display: none;
-    }
-}
 .swiper-pagination-bullet {
     background-color: rgb(71, 125, 71);
     opacity: 1;
@@ -133,4 +135,63 @@
 .swiper-navBtn::before,
 .swiper-navBtn::after {
     font-size: 40px;
+}
+/* Buscar deputado */
+.container-busca {
+    background-color: rgba(255, 255, 255, 0.962);
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2px 0;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+.buscar-deputado {
+    font-size: 20px;
+    color: rgb(48, 118, 48);
+    max-width: 90%;
+    margin-top: 20px;
+}
+#input-busca {
+    border-radius: 10px;
+    font-size: 16px;
+    max-width: 90%;
+    margin-top: 15px;
+    width: 90%;
+    padding: 10px;
+}
+.btn-buscar{
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(71, 125, 71); 
+    margin: 20px;
+    padding: 10px;
+    width: 200px;
+    color: #Fff;
+    transition: 0.3s ease-in-out;
+}
+.btn-buscar:hover {
+    background-color: rgb(25, 95, 25);
+    transform: scale(1.01);
+}
+/* Para fazer responsividade das cardes Desenvolvedores */
+@media screen and (max-width: 988px) {
+    
+}
+@media screen and (max-width: 768px) {
+    .slide-content {
+        margin: 0 10px;
+    }
+    .swiper-navBtn {
+        display: none;
+    }
+    .deputados-ativos {
+        width: 90%;
+        font-size: 1rem;
+    }
+    .container-busca {
+        width: 90%;
+    }
 }

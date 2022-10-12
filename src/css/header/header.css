@@ -1,3 +1,6 @@
+.header {
+    background: linear-gradient( #36a06f,#9fdcbf);
+}
 .row {
     margin: 0;
 }
@@ -7,12 +10,13 @@
 
 /* Barra de navegacao  */
 #nav-container {
-    padding-top: ;
+    padding-top: 0;
     padding-bottom: 0;
 }
 #logo {
     width: 200px;
 }
+
 .navbar-brand {
     padding: 0;
     color: #fff;
