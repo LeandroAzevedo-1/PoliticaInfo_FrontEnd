@@ -176,22 +176,4 @@
     background-color: rgb(25, 95, 25);
     transform: scale(1.01);
 }
-/* Para fazer responsividade das cardes Desenvolvedores */
-@media screen and (max-width: 988px) {
-    
-}
-@media screen and (max-width: 768px) {
-    .slide-content {
-        margin: 0 10px;
-    }
-    .swiper-navBtn {
-        display: none;
-    }
-    .deputados-ativos {
-        width: 90%;
-        font-size: 1rem;
-    }
-    .container-busca {
-        width: 90%;
-    }
-}
+

@@ -6,6 +6,9 @@
     text-decoration: none;
     color: #000;
 }
+/* html {
+    width: 100%;
+} */
 body {
     background: linear-gradient( #36a06f,#9fdcbf);
     width: 100%;

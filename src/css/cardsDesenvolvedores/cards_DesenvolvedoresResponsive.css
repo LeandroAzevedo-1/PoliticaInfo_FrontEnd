@@ -1,0 +1,21 @@
+@media (max-width: 1108px) {
+    .cards-desenvolvedores {
+        flex-wrap: wrap;
+    }
+    .card-dev {
+        margin: 10px 10px;
+    } 
+}
+@media (max-width: 768px) {
+    .cards-desenvolvedores {
+        flex-wrap: wrap;
+    }
+    .card-dev {
+        margin: 10px 25px;
+    }
+}
+@media (max-width: 617px) {
+    .card-dev {
+        width: 90%;
+    }
+}
