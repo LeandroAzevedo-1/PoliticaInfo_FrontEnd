@@ -6,6 +6,10 @@
     .swiper-navBtn {
         display: none;
     }
+    .swiper-navBtn::before,
+    .swiper-navBtn::after {
+        display: none;
+    }
     .deputados-ativos {
         width: 90%;
         font-size: 1rem;
