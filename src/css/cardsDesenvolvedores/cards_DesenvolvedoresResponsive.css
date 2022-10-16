@@ -10,8 +10,8 @@
     .cards-desenvolvedores {
         flex-wrap: wrap;
     }
-    .card-dev {
-        margin: 10px 25px;
+    .cards-desenvolvedores {
+        margin: 0;
     }
 }
 @media (max-width: 617px) {

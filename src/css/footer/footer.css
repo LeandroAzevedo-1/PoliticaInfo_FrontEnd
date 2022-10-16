@@ -1,0 +1,18 @@
+.rodape {
+    text-align: center;
+    margin: 1.5rem;
+}
+.rodape .texto-rodape {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .rodape .texto-rodape {
+        font-size: 0.8em;
+    }
+}
+@media (max-width: 510px) {
+    .rodape .texto-rodape {
+        font-size: 0.4em;
+    }
+}
