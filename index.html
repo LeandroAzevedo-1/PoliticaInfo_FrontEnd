@@ -29,10 +29,11 @@
     <link rel="stylesheet" href="src/css/header/header.css">
     <link rel="stylesheet" href="src/css/cardsDeputados/cardsDeputados.css">
     <link rel="stylesheet" href="src/css/cardsDeputados/cards_DeputadosResponsive.css">
+    <link rel="stylesheet" href="src/css/sobre/sobre.css">
     <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cardsDesenvolvedores.css">
     <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cards_DesenvolvedoresResponsive.css">
     <link rel="stylesheet" href="src/css/footer/footer.css">
-    
+
     <link rel="stylesheet" href="src/css/login.css">
     <link rel="stylesheet" href="src/css/responsiveLogin.css">
     <link rel="stylesheet" href="src/css/cadastro.css">
@@ -55,10 +56,10 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Políticos</a>
+                            <a class="nav-link" aria-current="page" href="#politico">Políticos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre</a>
+                            <a class="nav-link" href="#sobre">Sobre</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#desenvolvedores" id="#desenvolvedores">Desenvolvedores</a>
@@ -76,7 +77,7 @@
     </header>
     <!-- Fim header -->
 
-    <main class="container_cards-deputados">
+    <main id="politico" class="container_cards-deputados">
         <h1 class="deputados-ativos">
             Deputados em Exercíco
         </h1>
@@ -102,7 +103,20 @@
         </div>
     </main>
 
+    <section id="sobre">
+        <h3 class="sobre-title">Sobre Política Info</h3>
+        <p class="sobre-texto">
+            O <strong>Política Info</strong>, tem como objetivo divulgar informações de deputados, tais como seus partidos, suas despesas,
+            contatos, etc, de modo a trazer mais informações e transparência ao público sobre o caráter político do
+            nosso país.
+
+            Esse trabalho foi desenvolvido como um projeto de conclusão de curso dos alunos do quinto semestre do curso
+            de Análise e Desenvolvimento de Sistemas da Faculdade Impacta Tecnologia.
+        </p>
+    </section>
+
     <aside id="desenvolvedores" class="cards-desenvolvedores">
+        <h3 class="desenvolvedores-title">Desenvolvedores</h3>
         <div class="card-dev">
             <div class="image-card">
                 <img src="src/imagens/Antonio.jpeg" class="card-img-top image-develop " alt="Imagem developer Antonio">
@@ -188,7 +202,7 @@
             <div class="card-body card-informacao">
                 <h5 class="card-title">Matheus Chiarello</h5>
                 <p class="card-text">Analista de BI</p>
-                <p class="card-linguagem">Html | CSS | JavaScript | React | Bootstrap</p>
+                <p class="card-linguagem">Analista de BI | DBA | TOTVS</p>
                 <div class="redes-sociais">
                     <a class="card-redes-sociais" href="https://www.linkedin.com/in/matheus-chiarello/"
                         target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -203,6 +217,7 @@
 
     <footer class="rodape">
         <h2 class="texto-rodape">Trabalho de conclusão de curso | Faculdade Impacta 2022</h2>
+        <p class="copy">&copy; Política Info</p>
     </footer>
 
     <!-- <script src="src/js/index.js"></script> -->

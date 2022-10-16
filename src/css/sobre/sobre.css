@@ -1,0 +1,16 @@
+#sobre {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    padding: 2% 10% 2% 10%;
+    margin-top: 130px;
+}
+#sobre .sobre-title {
+    text-align: center;
+    font-weight: bold;
+}
+.sobre-texto {
+    font-size: 16px;
+    color:  rgba(255, 255, 255, 0.733);
+    text-align: center;
+}
