@@ -96,6 +96,19 @@
     color: #707070;
     text-align: center;
 }
+.comunicao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linkComunicacao {
+    margin: 0 5px;
+    font-size: 14px;
+    transition: .3s ease-in-out;
+}
+.linkComunicacao a:hover {
+    color: rgb(200, 105, 105);
+}
 .button {
     border: none;
     font-size: 16px;

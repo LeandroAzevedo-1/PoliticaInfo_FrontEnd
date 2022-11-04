@@ -31,6 +31,15 @@ function deputados() {
                   <p class="descricao">
                       ${siglaPartido} | ${siglaUf}
                   </p>
+                  <ul class="comunicao">
+                      <li class="linkComunicacao">
+                          <a href="https://www.camara.leg.br/tv/" target="_blank">TV Câmara</a>
+                      </li> 
+                      | 
+                      <li class="linkComunicacao">
+                          <a href="https://www.camara.leg.br/radio/" target="_blank">Rádio Câmara</a>
+                      </li>
+                  </ul>
 
                   <a href="https://www.camara.leg.br/" target="_blank"class="button">Saiba Mais</a>
               </div>
