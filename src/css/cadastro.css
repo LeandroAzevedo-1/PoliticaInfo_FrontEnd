@@ -1,4 +1,6 @@
-
+body {
+    background-color:#36a06f;
+}
 #telaLogin {
     width: 450px;
     position: absolute;

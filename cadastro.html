@@ -16,22 +16,22 @@
     <title>Politica Info Cadastro</title>
   </head>
   <body>
-    
     <div class="card" id="telaLogin" >
       <img src="src/imagens/logo.png" class="imageLogo" alt="Logo politica info">
       <div class="card-body">
         <form>
           <div class="mb-3">
-            <label for="name-cadastro" class="form-label">Nome</label>
-            <input type="name" class="form-control" id="name-cadastro" aria-describedby="emailHelp" placeholder="Informe seu nome">
+            <label for="nomeCadastro" class="form-label" id="nomeLabel">Nome</label>
+            <input type="name" class="form-control" id="nomeCadastro" aria-describedby="emailHelp" placeholder="Informe seu nome">
           </div>
+          
           <div class="mb-3">
-            <label for="email-cadastro" class="form-label">E-mail</label>
-            <input type="email" class="form-control" id="email-cadastro" placeholder="Informe seu e-mail">
+            <label for="emailCadastro" class="form-label" id="emailLabel">E-mail</label>
+            <input type="email" class="form-control" id="emailCadastro" placeholder="Informe seu e-mail">
           </div>
           <div class="d-grid gap-2">
             <!-- <button class="btn btn-success" type="submit" >Editar</button> -->
-            <a href="" class="btn btn-success" type="submit" id="cadastrar">Cadastrar</a>
+            <a href="" class="btn btn-success" type="submit" id="cadastrar" onclick="cadastrar()">Cadastrar</a>
           </div>
         </form>
       </div>

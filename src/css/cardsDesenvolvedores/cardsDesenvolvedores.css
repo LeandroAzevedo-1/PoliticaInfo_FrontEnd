@@ -3,7 +3,8 @@
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    min-height: 100vh;
+    margin-top: 120px;
+    /* min-height: 100vh; */
     transition: 0.3s ease-in-out;
 }
 .desenvolvedores-title {
@@ -13,7 +14,7 @@
 }
 .card-dev {
     width: 250px;
-    height: 400px;
+    height: 370px;
     margin: 0 10px;
     background-color: rgba(255, 255, 255, 0.733);
     border-radius: 24px;
@@ -27,7 +28,7 @@
     align-items: center;
     background: linear-gradient( #36a06f,#9fdcbf);
     width: 100%;
-    border-radius: 25px;
+    border-radius: 25px 25px 5px 5px;
     padding: 25px;
     margin-bottom: 25px;
 }

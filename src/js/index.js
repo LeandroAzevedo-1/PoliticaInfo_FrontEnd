@@ -1,48 +1,46 @@
 const teste = document.querySelector(".slide-content");
 function deputados() {
-  fetch(`https://dadosabertos.camara.leg.br/api/v2/deputados`) 
+  fetch(`https://dadosabertos.camara.leg.br/api/v2/deputados`)
     .then(async (resultDeputados) => {
       if (!resultDeputados.ok) {
         throw new Error(resultDeputados.status);
       }
 
       var deputadoInfo = await resultDeputados.json();
+      var deputadosDados = deputadoInfo.dados
 
-      //console.log(deputadoInfo.dados); //para usar a api do swagger, não precisa o ( dados )
-      deputadoInfo.dados.map((item) => {
+      // console.log(deputadosDados)
 
+      deputadosDados.map(({urlFoto, nome, siglaPartido, siglaUf, email}) => {
         let divCol = document.querySelector(".card-wrapper");
 
-        divCol.innerHTML += `
-              <div class="card swiper-slide">
+        divCol.innerHTML += 
+        `
+            <div class="card swiper-slide">
               <div class="image-content">
                   <span class="overlay"></span>
 
                   <div class="card-image">
-                      <img src="${item.urlFoto}" alt="Foto Deputado" class="card-img">
+                      <img src="${urlFoto}" alt="Foto Deputado" class="card-img">
                   </div>
               </div>
 
               <div class="card-content">
-                  <h2 class="name">${item.nome}</h2>
+                  <h2 class="name">${nome}</h2>
+                  <p>${email}</p>
                   <p class="descricao">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione nihil tenetur fuga
-                      atque
-                      impedit reprehenderit
+                      ${siglaPartido} | ${siglaUf}
                   </p>
 
-                  <button class="button">Saiba Mais</button>
+                  <a href="https://www.camara.leg.br/" target="_blank"class="button">Saiba Mais</a>
               </div>
-          </div>
+            </div>
             `;
         teste.appendChild(divCol);
-
-        // console.log(
-        //   `${item.nome} ${item.siglaPartido} ${item.siglaUf} ${item.urlFoto}`
-        // );
       });
-    })
-    .carch((e) => console.log(e));
+    }).carch((e) => console.log(e));
 }
-deputados();    //console.log(deputados()); verifico o que esta vindo 
+deputados(); 
+
+
 

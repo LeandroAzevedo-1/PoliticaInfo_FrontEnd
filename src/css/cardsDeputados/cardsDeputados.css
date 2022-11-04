@@ -177,4 +177,7 @@
     background-color: rgb(25, 95, 25);
     transform: scale(1.01);
 }
+.ativo {
+    display: none;
+}
 
