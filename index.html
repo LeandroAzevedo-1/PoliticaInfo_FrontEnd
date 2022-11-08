@@ -30,6 +30,7 @@
     <link rel="stylesheet" href="src/css/header/header.css">
     <link rel="stylesheet" href="src/css/cardsDeputados/cardsDeputados.css">
     <link rel="stylesheet" href="src/css/cardsDeputados/cards_DeputadosResponsive.css">
+    <link rel="stylesheet" href="src/css/BuscaDeputados/buscaDeputados.css">
     <link rel="stylesheet" href="src/css/sobre/sobre.css">
     <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cardsDesenvolvedores.css">
     <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cards_DesenvolvedoresResponsive.css">
@@ -96,13 +97,18 @@
             </div>
 
         </div> 
+    </main>
 
+    <section class="busca">
         <div class="container-busca">
             <h3 class="buscar-deputado">Buscar Deputado</h3>
             <input type="text" id="input-busca" placeholder="Digite o nome e sobrenome do deputado">
-            <input type="button" value="Buscar" class="btn-buscar" onclick="btnBusca()">
+            <span id="Sucess"></span>
+            <input type="button" value="Buscar" class="btn-buscar">
         </div>
-    </main>
+
+        <div class="DeputadoBuscado"></div>
+    </section>
 
     <section id="sobre">
         <h3 class="sobre-title">Sobre Política Info</h3>

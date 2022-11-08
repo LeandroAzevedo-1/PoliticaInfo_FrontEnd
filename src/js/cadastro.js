@@ -18,20 +18,61 @@ nomeCadastro.addEventListener("keyup", () => {
     }
 })
 
-function cadastrar() {
-    if ((emailCadastro.value.length >=1) &&
-    (emailCadastro.value.length >=3) &&
-    (emailCadastro.value.search("@")==-1) &&
-    (emailCadastro.value.search("@")==-1) &&
-    (emailCadastro.value.search(" ")==-1) &&
-    (emailCadastro.value.search(" ")==-1) &&
-    (emailCadastro.value.search(".")!=-1) &&
-    (emailCadastro.value.indexOf(".") >=1)&&
-    (emailCadastro.value.lastIndexOf(".") < emailCadastro.value.length - 1)) {
-        emailLabel.innerHTML = "E-mail cadastrando..."
+emailCadastro.addEventListener("keyup", () => {
+    event.preventDefault()
+
+    if(
+        emailCadastro.value.length >= 4 &&
+        emailCadastro.value.includes("@") &&
+        emailCadastro.value.includes(".") && 
+        emailCadastro.value.includes(".com") &&
+        emailCadastro.checkValidity()
+    )
+    {
+        emailLabel.innerHTML = "E-mail válido. "
+        emailLabel.setAttribute("style", "color: green")
+        emailCadastro.setAttribute('style', 'border-color: green')
+        
     }else {
         emailLabel.setAttribute("style", "color: red")
         emailLabel.innerHTML = "E-mail *Insira um e-mail válido"
         emailCadastro.setAttribute('style', 'border-color: red')
     }
+
+})
+function fazPost (url, Body) {
+    console.log("Body=", Body)
+
+    let request = new XMLHttpRequest()
+    request.open("POST", url, true)
+    request.setRequestHeader("Content-Type", "application/json")
+    request.send(JSON.stringify(Body))
+
+    request.onload = function () {
+        console.log(this.responseText)
+    }
+
+    return request.responseText
+}
+
+// Deu certo, chamar a função cadastrar 
+function cadastrarUsuario() {
+    event.preventDefault()
+    let url = "http://localhost:8080/usuarios"
+
+    
+    console.log(url)
+
+    let nome = nomeCadastro.value
+    let email = emailCadastro.value
+
+    console.log(nome)
+    console.log(email)
+
+    Body = {
+        "nome": nome,
+        "email": email
+    }
+
+    fazPost(url, Body)
 }

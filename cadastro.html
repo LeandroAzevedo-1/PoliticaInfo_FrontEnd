@@ -19,7 +19,7 @@
     <div class="card" id="telaLogin" >
       <img src="src/imagens/logo.png" class="imageLogo" alt="Logo politica info">
       <div class="card-body">
-        <form>
+        <form onsubmit="cadastrarUsuario()">
           <div class="mb-3">
             <label for="nomeCadastro" class="form-label" id="nomeLabel">Nome</label>
             <input type="name" class="form-control" id="nomeCadastro" aria-describedby="emailHelp" placeholder="Informe seu nome">
@@ -31,7 +31,7 @@
           </div>
           <div class="d-grid gap-2">
             <!-- <button class="btn btn-success" type="submit" >Editar</button> -->
-            <a href="" class="btn btn-success" type="submit" id="cadastrar" onclick="cadastrar()">Cadastrar</a>
+            <button class="btn btn-success" type="submit" id="cadastrar">Cadastrar</button>
           </div>
         </form>
       </div>
