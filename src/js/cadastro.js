@@ -40,13 +40,28 @@ emailCadastro.addEventListener("keyup", () => {
     }
 
 })
-function fazPost (url, Body) {
-    console.log("Body=", Body)
+
+// const btnGetUser = document.querySelector(".btn")
+// btnGetUser.addEventListener("click", async (e) => {
+//     e.preventDefault()
+//     let nome = nomeCadastro.value
+//     let email = emailCadastro.value
+
+//     // console.log(nome, email)
+
+//     let urlGetUser = await fetch("http://localhost:8080/usuarios")
+//     console.log(urlGetUser)
+// })
+
+
+function fazPost (url, body) {
+    console.log("Body=", body)
 
     let request = new XMLHttpRequest()
     request.open("POST", url, true)
-    request.setRequestHeader("Content-Type", "application/json")
-    request.send(JSON.stringify(Body))
+    request.setRequestHeader("Content-type", "application/json")
+    request.setRequestHeader("Access-Control-Allow-Origin", "*")
+    request.send(JSON.stringify(body))
 
     request.onload = function () {
         console.log(this.responseText)
@@ -69,10 +84,10 @@ function cadastrarUsuario() {
     console.log(nome)
     console.log(email)
 
-    Body = {
+    body = {
         "nome": nome,
         "email": email
     }
 
-    fazPost(url, Body)
+    fazPost(url, body)
 }

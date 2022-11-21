@@ -23,7 +23,21 @@ const CardsBusca = async () => {
   let jsonLinkCard = await urlCard.json()
   let jsonLinkCardDados = jsonLinkCard.dados
   
-  jsonLinkCardDados.filter(async ({uri}) => {
+  let FirstLetra = inputBusca.value.charAt(0)
+  let returFilter = jsonLinkCardDados.filter(item => {
+    if(item.nome.charAt(0) == FirstLetra){
+      return item
+    }
+  })
+
+  let createCard = returFilter.filter(item => {
+    if(inputBusca.value == item.nome){
+      return item 
+    }
+  
+  })
+
+  createCard.map(async ({uri}) => {
     let uridep = uri
     let uriDeputadosUri = await fetch(uridep)
     let jsonUri = await uriDeputadosUri.json()
@@ -79,6 +93,7 @@ btnBuscar.addEventListener("click", async ()=> {
     }else {
       msgSucess.innerHTML = `Deputado Não Existe`
       msgSucess.setAttribute("style", "color: red")
+      deputadoBuscado.innerHTML = ''
       inputBusca.focus()
     }
     CardsBusca()
@@ -97,37 +112,37 @@ function deputados() {
       deputadosDados.map(({urlFoto, nome, siglaPartido, siglaUf, email}) => {
         let divCol = document.querySelector(".card-wrapper");
 
-        divCol.innerHTML += 
-        `
-            <div class="card swiper-slide">
-              <div class="image-content">
-                  <span class="overlay"></span>
+        // divCol.innerHTML += 
+        // `
+        //     <div class="card swiper-slide">
+        //       <div class="image-content">
+        //           <span class="overlay"></span>
 
-                  <div class="card-image">
-                      <img src="${urlFoto}" alt="Foto Deputado" class="card-img">
-                  </div>
-              </div>
+        //           <div class="card-image">
+        //               <img src="${urlFoto}" alt="Foto Deputado" class="card-img">
+        //           </div>
+        //       </div>
 
-              <div class="card-content">
-                  <h2 class="name">${nome}</h2>
-                  <p>${email}</p>
-                  <p class="descricao">
-                      ${siglaPartido} | ${siglaUf}
-                  </p>
-                  <ul class="comunicao">
-                      <li class="linkComunicacao">
-                          <a href="https://www.camara.leg.br/tv/" target="_blank">TV Câmara</a>
-                      </li> 
-                      | 
-                      <li class="linkComunicacao">
-                          <a href="https://www.camara.leg.br/radio/" target="_blank">Rádio Câmara</a>
-                      </li>
-                  </ul>
+        //       <div class="card-content">
+        //           <h2 class="name">${nome}</h2>
+        //           <p>${email}</p>
+        //           <p class="descricao">
+        //               ${siglaPartido} | ${siglaUf}
+        //           </p>
+        //           <ul class="comunicao">
+        //               <li class="linkComunicacao">
+        //                   <a href="https://www.camara.leg.br/tv/" target="_blank">TV Câmara</a>
+        //               </li> 
+        //               | 
+        //               <li class="linkComunicacao">
+        //                   <a href="https://www.camara.leg.br/radio/" target="_blank">Rádio Câmara</a>
+        //               </li>
+        //           </ul>
 
-                  <a href="https://www.camara.leg.br/" target="_blank"class="button">Saiba Mais</a>
-              </div>
-            </div>
-            `;
+        //           <a href="https://www.camara.leg.br/" target="_blank"class="button">Saiba Mais</a>
+        //       </div>
+        //     </div>
+        //     `;
         teste.appendChild(divCol);
       });
     }).carch((e) => console.log(e));
