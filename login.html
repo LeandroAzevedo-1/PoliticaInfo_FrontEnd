@@ -18,6 +18,10 @@
   <body>
     <div class="card" id="telaLogin" >
       <img src="src/imagens/logo.png" class="imageLogo" alt="Logo politica info">
+
+      <div id="msgError"></div>
+      <div id="msgSucces"></div>
+
       <div class="card-body">
         <form>
           <div class="mb-3">
@@ -29,8 +33,8 @@
             <input type="email" class="form-control" id="email" placeholder="Informe seu e-mail">
           </div>
           <div class="d-grid gap-2">
-            <button class="btn btn-success" type="submit" >Logar</button>
-            <a href="cadastro.html" class="btn btn-success" type="submit" >Cadastro</a>
+            <button class="btn btn-success" type="submit" >Entrar</button>
+            <div>Não tem uma conta <a href="cadastro.html" target="_blank" class="cadastre-se">cadastre-se</a></div>
           </div>
         </form>
       </div>
@@ -48,5 +52,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+    <script src="src/js/login.js"></script>
   </body>
 </html>

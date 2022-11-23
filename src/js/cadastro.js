@@ -41,19 +41,10 @@ emailCadastro.addEventListener("keyup", () => {
 
 })
 
-// const btnGetUser = document.querySelector(".btn")
-// btnGetUser.addEventListener("click", async (e) => {
-//     e.preventDefault()
-//     let nome = nomeCadastro.value
-//     let email = emailCadastro.value
-
-//     // console.log(nome, email)
-
-//     let urlGetUser = await fetch("http://localhost:8080/usuarios")
-//     console.log(urlGetUser)
-// })
 
 
+// --------------------------------------------------------------------------------------------
+// Codigo post funcionando 
 function fazPost (url, body) {
     console.log("Body=", body)
 
@@ -61,6 +52,7 @@ function fazPost (url, body) {
     request.open("POST", url, true)
     request.setRequestHeader("Content-type", "application/json")
     request.setRequestHeader("Access-Control-Allow-Origin", "*")
+
     request.send(JSON.stringify(body))
 
     request.onload = function () {
@@ -90,4 +82,6 @@ function cadastrarUsuario() {
     }
 
     fazPost(url, body)
+
+    Window.location.replace('http://127.0.0.1:5503/login.html')  
 }
