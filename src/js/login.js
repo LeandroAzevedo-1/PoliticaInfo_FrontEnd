@@ -45,15 +45,3 @@ function getUser(){
       });
     });
 }
-
-
-// get ---- testando
-// fetch("http://localhost:8080/usuarios")
-// .then(res =>  res.json())
-// .then(data =>{
-
-//     data.map(({nome, email}) => {
-//         console.log(nome, email)
-
-//     })
-// })

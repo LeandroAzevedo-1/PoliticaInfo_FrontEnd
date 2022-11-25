@@ -48,17 +48,58 @@
    max-width: 100%;
    flex-direction: column;
 }
-.container-deputadoBusado {
+
+/* Restul deputado  */
+.DeputadoBuscado {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+ .container-deputadoBusado {
     display: flex;
     margin: 30px;
-    background-color: rgba(245, 245, 220, 0);
-    box-shadow: 5px 5px 0px 0px rgba(1, 1, 1, 0.071);
-
-    /* background-color: red; */
     width: 1050px;
 }
 .imgBusca {
-    width: 180px;
-    margin-right: 15px;
+    text-align: center;
+    width: 13rem;
+    margin-right: 3.9rem;
     border-radius: 5px ;
+}
+.imgBusca img {
+    width: 100%;
+    object-fit: cover;
+}
+.descriscao {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    text-transform: uppercase;
+}
+.infoDeputado {
+    margin-bottom: 15px;
+}
+.siglaPartido {
+    margin-bottom: 3rem;
+}
+.nomeCivil {
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+.despesasInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cardDespesas {
+    width: 450px;
+    margin: 20px;
+    padding: 10px;
+    height: 300px;
+    box-shadow: 0 .2rem 1.5rem rgba(0,0,0,.1);
+
 }

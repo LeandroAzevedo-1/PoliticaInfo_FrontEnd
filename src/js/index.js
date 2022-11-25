@@ -4,6 +4,8 @@ const inputBusca = document.querySelector("#input-busca")
 const btnBuscar = document.querySelector(".btn-buscar")
 const msgSucess = document.querySelector("#Sucess")
 const deputadoBuscado = document.querySelector(".DeputadoBuscado")
+const firstcardsinfo = document.querySelector(".firstcardsinfo")
+const despesasInfo = document.querySelector(".despesasInfo")
 
 const urlLink = `https://dadosabertos.camara.leg.br/api/v2/deputados`
 
@@ -48,34 +50,56 @@ const CardsBusca = async () => {
 
     if(inputBusca.value === jsonUriDados.ultimoStatus.nome){
 
-      const {ultimoStatus, nomeCivil, dataNascimento, municipioNascimento, ufNascimento, escolaridade} = jsonUriDados
+      const {id, ultimoStatus, nomeCivil, dataNascimento, municipioNascimento, ufNascimento, escolaridade} = jsonUriDados
 
-      deputadoBuscado.innerHTML = `
+      firstcardsinfo.innerHTML = ` 
       
-      <div class="container-deputadoBusado">
+      <section class="container-deputadoBusado">
 
-          <div>
-            <img class="imgBusca" src="${ultimoStatus.urlFoto}" alt="Foto ${ultimoStatus.nome}">
+          <div class="imgBusca">
+            <img  src="${ultimoStatus.urlFoto}" alt="Foto ${ultimoStatus.nome}">
           </div>
 
           <div class="descriscao">
-            <h3>${nomeCivil}</h3>
-            <p>Nome Eleitoral : ${ultimoStatus.nome}</p>
+            <h3 class="nomeCivil">${nomeCivil}</h3>
+            <p class="nomeEleeitoral">Nome Eleitoral: ${ultimoStatus.nome}</p>
 
-              <div>
-                <span>Partido: ${ultimoStatus.siglaPartido}</span> | 
+              <div class="infoDeputado">
+                <span class="siglaPartido">Partido: ${ultimoStatus.siglaPartido}</span> - 
                 <span>Situação: Em ${ultimoStatus.situacao}</span>
               </div>
 
                 <div>
                   <p>Data de Nascimento: ${dataNascimento}</p>
-                  <p>Original da cidade ${municipioNascimento} | Estado: ${ufNascimento}</p>
+                  <p>Original da cidade: ${municipioNascimento} - Estado: ${ufNascimento}</p>
                   <p>Escolaridade: ${escolaridade}</p>
-                  <span>E-mail : ${ultimoStatus.email}</span>
+                  <span>E-mail: ${ultimoStatus.email}</span>
                 </div>
           </div>
-      </div>
+      </section>
       `
+      // inicio 
+      let uriDespesasDeputado = await fetch(`https://dadosabertos.camara.leg.br/api/v2/deputados/${id}/despesas?ano=2022&mes=11&ordem=ASC`)
+      let jsonUri = await uriDespesasDeputado.json();
+      let jsonUriDadosDespesa = jsonUri.dados;
+
+      // Buscar Despesas 
+      jsonUriDadosDespesa.map(({tipoDocumento, nomeFornecedor, dataDocumento, valorDocumento, valorLiquido, urlDocumento}) => {
+        despesasInfo.innerHTML += `
+        
+            <div class="cardDespesas">
+              <h1>${tipoDocumento}</h1>
+              <h2>${valorDocumento} - <em>Valor líquido ${valorLiquido}</em></h2>
+              <p>Nome do forncecedor: ${nomeFornecedor}</p>
+              <p>${dataDocumento}</p>
+
+              <a href="${urlDocumento}">Link da despesa</a>
+            <div/>
+        
+        `
+      })
+
+      // Fim
     }
   }) 
   
