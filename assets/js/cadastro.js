@@ -2,7 +2,7 @@ const cadastroForm = document.forms['cadastro'];
 
 async function cadastrar(cadastro) {
     try {
-        const requisicao = await fetch('', {
+        const requisicao = await fetch('http://localhost:8080/usuarios', {
             method: 'POST',
             body: JSON.stringify(cadastro)
         });
