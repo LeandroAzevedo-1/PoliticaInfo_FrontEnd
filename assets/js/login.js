@@ -6,7 +6,7 @@ const loginForm = document.forms['login'];
 function autenticar() {
     try{
       var xhttp = new XMLHttpRequest();
-      xhttp.open("GET", url, false);
+      xhttp.open("POST", url, false);
       xhttp.send();
 
       console.log(xhttp.responseText);
