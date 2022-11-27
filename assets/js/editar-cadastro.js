@@ -12,7 +12,7 @@ async function editar(cadastroEditado) {
             },
             body: JSON.stringify(cadastroEditado)
         });
-       
+        
         const resposta = requisicao.json();
 
         return resposta;
@@ -63,14 +63,14 @@ window.addEventListener('load', () => {
 })
 
 editarForm.addEventListener('submit', (evento) => {
-    
+   
     evento.preventDefault();
-
+    
     const inputs = evento.target.elements;
     
     const nome = inputs.nomeCompletoModal.value;
     const email = inputs.emailModal.value;
-    
+
     const id = pegarDadosDoUsuarioNoLocalStorage().id;
 
     const cadastroEditado = { id, nome, email }

@@ -1,3 +1,5 @@
+
+
 const cadastroForm = document.forms['cadastro'];
 
 async function cadastrar(cadastro) {
@@ -22,11 +24,9 @@ function redirecionarPara(URLdeDestino) {
 }
 
 cadastroForm.addEventListener('submit', (evento) => {
-   
     evento.preventDefault();
 
     const inputs = evento.target.elements;
-    
     
     const nomeCompleto = inputs.nomeCompleto.value;
     const email = inputs.email.value;
