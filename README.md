@@ -17,26 +17,27 @@
 
 <p>
   <h3 align="center">Resumo</h3>
-Vivemos em um mundo cada vez mais globalizado e conhecido, onde qualquer
+    Vivemos em um mundo cada vez mais globalizado e conhecido, onde qualquer
 informação que queremos pode estar a alguns cliques de distância em uma simples
 procura na internet. Porém, muitas vezes, quando se trata de informações sobre
-política e tudo o que norteia-o, vemos que é mais difícil encontrar dados e sites
+política e tudo o que norteia, vemos que é mais difícil encontrar dados e sites
 confiáveis e legítimos.
-Dentro disso, cada vez mais se faz necessário o desenvolvimento de sites e
-aplicativos que tragam informações claras e reais sobre política, partidos,
+Diante disso, cada vez mais se faz necessário o desenvolvimento de sites e
+aplicativos que trazem informações claras e reais sobre política, partidos,
 parlamentares, etc. De modo a facilitar o contato do povo com essas informações
 que são tão necessárias nos dias de hoje, para que se tome decisões mais objetivas
-em momentos de votação eleitoral, por exemplo.
-A fim de atender melhor a entrega de dados confiáveis do meio da política,
-propomos o desenvolvimento de um website, onde poderá ser acessado
-eventualmente por qualquer pessoa que tenha acesso a internet. A solução deve
-trazer indicadores, análises e descrições a respeito de partidos, seus deputados e
-suas despesas, e várias outras informações que estão dentro desse ecossistema.
+em momentos de votação eleitoral. Por exemplo: A fim de atender melhor a entrega de 
+dados confiáveis do meio da política, propomos o desenvolvimento de um website, 
+onde poderá ser acessado eventualmente por qualquer pessoa que tenha acesso a internet. 
+    A solução deve trazer indicadores, análises e descrições a respeito de partidos, seus 
+deputados e suas despesas, assim como várias informações que estão dentro desse website.
 Esses dados serão extraídos diretamente do serviço de Dados Abertos da Câmara
-dos Deputados que é disponibilizado pela Câmara publicamente.
-Política;website;Indicadores;Deputados
+dos Deputados que é disponibilizado pela Câmara publicamente. 
+
+Palavras-chaves: Política - website - Indicadores - Deputados.
+
 <p>
-<span>### PROJETO DE CONCLUSÃO DE CURSO<span> 
+<span align="center">PROJETO DE CONCLUSÃO DE CURSO<span> 
 
 <h3 align="center">Análise e Desenvolvimento de Sistemas - Faculdade Impacta</h3>
 
@@ -52,9 +53,8 @@ Política;website;Indicadores;Deputados
     
   </p>
   
-  <p  align="center">Abaixo, apresentamos algumas informações técnicas sobre o projeto: </p>
+  <p  align="center">Abaixo, apresentamos algumas informações técnicas sobre o projeto e Repositórios Github </p>
   
-  <p  align="center">Repositórios Github </p>
   
 <li>Backend</li>
 <li>Frontend</li>
