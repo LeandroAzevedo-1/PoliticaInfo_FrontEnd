@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/cadastro.css">
+  <link rel="stylesheet" href="./assets/css/responsiveLogin.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <title>Politica Info - Cadastro</title>
+</head>
+
+<body>
+  <div class="card" id="telaLogin">
+    <img src="./assets/imagens/logo.png" class="imageLogo" alt="Logo politica info">
+    <div class="card-body">
+      <form name="cadastro">
+        <div class="mb-3">
+          <label class="form-label" for="nomeCompleto">
+            Nome
+          </label>
+          <input class="form-control" type="text" id="nomeCompleto" placeholder="Informe seu nome">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">
+            E-mail
+          </label>
+          <input class="form-control" type="email" id="email" placeholder="Informe seu e-mail">
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-success" type="submit" id="cadastrar">
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p class="rodape">Faculdade Impacta - 2022</p>
+  </footer>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+
+
+  <script src="./assets/js/cadastro.js"></script>
+</body>
+
+</html>

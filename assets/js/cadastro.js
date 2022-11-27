@@ -3,9 +3,7 @@ let nomeLabel = document.querySelector("#nomeLabel")
 
 let emailCadastro = document.querySelector("#emailCadastro")
 let emailLabel = document.querySelector("#emailLabel")
-
-
-// Validação campo nome 
+ 
 nomeCadastro.addEventListener("keyup", () => {
     if(nomeCadastro.value.length <= 2) {
         nomeLabel.setAttribute("style", "color: red")
@@ -40,11 +38,7 @@ emailCadastro.addEventListener("keyup", () => {
     }
 
 })
-
-
-
-// --------------------------------------------------------------------------------------------
-// Codigo post funcionando 
+ 
 function fazPost (url, body) {
     console.log("Body=", body)
 
@@ -62,7 +56,6 @@ function fazPost (url, body) {
     return request.responseText
 }
 
-// Deu certo, chamar a função cadastrar 
 function cadastrarUsuario() {
     event.preventDefault()
     let url = "http://localhost:8080/usuarios"

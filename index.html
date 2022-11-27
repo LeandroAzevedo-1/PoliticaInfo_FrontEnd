@@ -6,57 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Politica Info</title>
-    <!--link Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
     <!-- Bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS Bootstrap arq  -->
-    <link rel="stylesheet" href="src/bootstrap/css/bootstrap.min.css">
-
-    <!-- Css swiper -->
-    <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;1,300&display=swap">
+    <!-- CSS Bootstrap arq -->
+    <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
     <!-- favicon -->
-    <link rel="shortcut icon" href="src/imagens/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <!-- CSS Project-->
-    <link rel="stylesheet" href="src/css/reset.css">
-    <link rel="stylesheet" href="src/css/header/header.css">
-    <link rel="stylesheet" href="src/css/cardsDeputados/cardsDeputados.css">
-    <link rel="stylesheet" href="src/css/cardsDeputados/cards_DeputadosResponsive.css">
-    <link rel="stylesheet" href="src/css/BuscaDeputados/buscaDeputados.css">
-    <link rel="stylesheet" href="src/css/sobre/sobre.css">
-    <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cardsDesenvolvedores.css">
-    <link rel="stylesheet" href="src/css/cardsDesenvolvedores/cards_DesenvolvedoresResponsive.css">
-    <link rel="stylesheet" href="src/css/footer/footer.css">
-
-    <link rel="stylesheet" href="src/css/login.css">
-    <link rel="stylesheet" href="src/css/responsiveLogin.css">
-    <link rel="stylesheet" href="src/css/cadastro.css">
-    <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/header/header.css">
+    <link rel="stylesheet" href="./assets/css/cardsDeputados/cardsDeputados.css">
+    <link rel="stylesheet" href="./assets/css/cardsDeputados/cards_DeputadosResponsive.css">
+    <link rel="stylesheet" href="./assets/css/BuscaDeputados/buscaDeputados.css">
+    <link rel="stylesheet" href="./assets/css/sobre/sobre.css">
+    <link rel="stylesheet" href="./assets/css/cardsDesenvolvedores/cardsDesenvolvedores.css">
+    <link rel="stylesheet" href="./assets/css/cardsDesenvolvedores/cards_DesenvolvedoresResponsive.css">
+    <link rel="stylesheet" href="./assets/css/footer/footer.css">
+    <link rel="stylesheet" href="./assets/libs/swiper-bundle/swiper-bundle.min.css">
 
 </head>
 
 <body>
-
+    <!-- Inicio header -->
     <header class="header">
         <nav class="navbar navbar-expand-lg bg-light " id="nav-container">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img id="logo" src="src/imagens/logo.png" alt="Imagem logo política info">
+                    <img id="logo" src="./assets/imagens/logo.png" alt="Imagem logo política info">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav" id="navbar">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#politico">Políticos</a>
                         </li>
@@ -66,37 +54,26 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#desenvolvedores" id="#desenvolvedores">Desenvolvedores</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link logado" href="http://127.0.0.1:5503/login.html" target="_blank">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#" target="_blank">Editar</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+
     <!-- Fim header -->
 
     <main id="politico" class="container_cards-deputados">
-        <h1 class="deputados-ativos">
-            Deputados em Exercíco
-        </h1>
+        <h1 class="deputados-ativos">Deputados em Exercíco</h1>
         <div class="container-cards slide-container swiper">
             <div class="slide-content">
                 <div class="card-wrapper swiper-wrapper">
                     <!-- card vindo da api js-->
-
                 </div>
-
                 <div class="swiper-button-next swiper-navBtn"></div>
                 <div class="swiper-button-prev swiper-navBtn"></div>
                 <div class="swiper-pagination"></div>
-
             </div>
-
-        </div> 
+        </div>
     </main>
 
     <section class="busca">
@@ -104,38 +81,31 @@
             <h3 class="buscar-deputado">Buscar Deputado</h3>
             <input type="text" id="input-busca" placeholder="Digite o nome e sobrenome do deputado">
             <span id="Sucess"></span>
-            <input type="button" value="Buscar" class="btn-buscar">
+            <input class="btn-buscar" type="button" value="Buscar">
         </div>
 
-        <div class="DeputadoBuscado">
-            <div class="firstcardsinfo">
-                
-            </div>
-            <div class="despesasInfo">
-
-            </div>
-        </div>
+        <div class="DeputadoBuscado"></div>
     </section>
 
     <section id="sobre">
         <h3 class="sobre-title">Sobre Política Info</h3>
         <p class="sobre-texto">
-            O <strong>Política Info</strong>, tem como objetivo divulgar informações de deputados, tais como seus partidos, suas despesas,
+            O <strong>Política Info</strong>, tem como objetivo divulgar informações de deputados, tais como seus
+            partidos, suas despesas,
             contatos, etc, de modo a trazer mais informações e transparência ao público sobre o caráter político do
             nosso país.
 
             Esse trabalho foi desenvolvido como um projeto de conclusão de curso dos alunos do quinto semestre do curso
             de Análise e Desenvolvimento de Sistemas da Faculdade Impacta Tecnologia.
         </p>
-
-        <a href="https://www.figma.com/file/tgnnNHfCZVwfkLpPulqk6S/Giovana-Victoria-da-Silva-Mendes's-team-library?node-id=0%3A1" target="_blank"class="linkFigma">Clique aqui e veja o Projeto no Figma</a>
     </section>
 
     <aside id="desenvolvedores" class="cards-desenvolvedores">
         <h3 class="desenvolvedores-title">Desenvolvedores</h3>
         <div class="card-dev">
             <div class="image-card">
-                <img src="src/imagens/Antonio.jpeg" class="card-img-top image-develop " alt="Imagem developer Antonio">
+                <img src="./assets/imagens/Antonio.jpeg" class="card-img-top image-develop "
+                    alt="Imagem developer Antonio">
             </div>
 
             <div class="card-body card-informacao">
@@ -143,11 +113,11 @@
                 <p class="card-text">ServiceNow Developer</p>
                 <p class="card-linguagem">Analista de BI | DBA | TOTVS</p>
                 <div class="redes-sociais">
-                    <a class="card-redes-sociais" href="https://www.linkedin.com/in/antonio-pavao/" target="_blank"><i
-                            class="bi bi-linkedin"></i>
+                    <a class="card-redes-sociais" href="https://www.linkedin.com/in/antonio-pavao/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
                     </a>
-                    <a class="card-redes-sociais" href="https://github.com/antoniopavao" target="_blank"><i
-                            class="bi bi-github"></i>
+                    <a class="card-redes-sociais" href="https://github.com/antoniopavao" target="_blank">
+                        <i class="bi bi-github"></i>
                     </a>
                 </div>
 
@@ -155,7 +125,8 @@
         </div>
         <div class="card-dev">
             <div class="image-card">
-                <img src="src/imagens/Caroline.jpeg" class="card-img-top image-develop " alt="Imagem developer Antonio">
+                <img class="card-img-top image-develop" src="./assets/imagens/Caroline.jpeg"
+                    alt="Imagem developer Antonio">
             </div>
 
             <div class="card-body card-informacao">
@@ -163,18 +134,19 @@
                 <p class="card-text">Software Engineer</p>
                 <p class="card-linguagem">Java | Python | Scala</p>
                 <div class="redes-sociais">
-                    <a class="card-redes-sociais" href=" https://www.linkedin.com/in/carolaraujodev/" target="_blank"><i
-                            class="bi bi-linkedin"></i></a>
-                    <a class="card-redes-sociais" href=" https://github.com/carolaraujo" target="_blank"><i
-                            class="bi bi-github"></i>
+                    <a class="card-redes-sociais" href=" https://www.linkedin.com/in/carolaraujodev/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="card-redes-sociais" href=" https://github.com/carolaraujo" target="_blank">
+                        <i class="bi bi-github"></i>
                     </a>
                 </div>
-
             </div>
         </div>
         <div class="card-dev">
             <div class="image-card">
-                <img src="src/imagens/Giovana.jpeg" class="card-img-top image-develop " alt="Imagem developer Antonio">
+                <img class="card-img-top image-develop " src="./assets/imagens/Giovana.jpeg"
+                    alt="Imagem developer Antonio">
             </div>
 
             <div class="card-body card-informacao">
@@ -193,7 +165,7 @@
         </div>
         <div class="card-dev">
             <div class="image-card">
-                <img src="src/imagens/leo.JPG" class="card-img-top image-develop " alt="Imagem developer Antonio">
+                <img src="./assets/imagens/leo.JPG" class="card-img-top image-develop " alt="Imagem developer Antonio">
             </div>
 
             <div class="card-body card-informacao">
@@ -212,7 +184,8 @@
         </div>
         <div class="card-dev">
             <div class="image-card">
-                <img src="src/imagens/Matheus.jpeg" class="card-img-top image-develop " alt="Imagem developer Antonio">
+                <img class="card-img-top image-develop " src="./assets/imagens/Matheus.jpeg"
+                    alt="Imagem developer Antonio">
             </div>
 
             <div class="card-body card-informacao">
@@ -220,10 +193,11 @@
                 <p class="card-text">Analista de BI</p>
                 <p class="card-linguagem">Analista de BI | DBA | TOTVS</p>
                 <div class="redes-sociais">
-                    <a class="card-redes-sociais" href="https://www.linkedin.com/in/matheus-chiarello/"
-                        target="_blank"><i class="bi bi-linkedin"></i></a>
-                    <a class="card-redes-sociais" href="https://github.com/MathChiarello" target="_blank"><i
-                            class="bi bi-github"></i>
+                    <a class="card-redes-sociais" href="https://www.linkedin.com/in/matheus-chiarello/" target="_blank">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                    <a class="card-redes-sociais" href="https://github.com/MathChiarello" target="_blank">
+                        <i class="bi bi-github"></i>
                     </a>
                 </div>
 
@@ -235,16 +209,47 @@
         <h2 class="texto-rodape">Trabalho de conclusão de curso | Faculdade Impacta 2022</h2>
         <p class="copy">&copy; Política Info</p>
     </footer>
+    <!-- Modal edição -->
+    <div class="modal fade" id="modalEdicao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Editar cadastro</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form name="editarCadastro">
+                        <div class="form-group mb-3">
+                            <input class="form-control" type="text" id="nomeCompletoModal" placeholder="Seu nome">
+                        </div>
+                        <div class="form-group mb-3">
+                            <input class="form-control" type="text" id="emailModal" placeholder="Seu e-mail">
+                        </div>
+                        <div class="form-group d-grid gap-2">
+                            <button class="btn btn-success" type="submit" id="editarCadastro">
+                                Editar
+                            </button>
+                            <button class="btn btn-danger" type="button" id="deletarCadastro">
+                                Deletar
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="src/js/index.js"></script>
-    <script src="src/js/swiper-bundle.min.js"></script>
-    <script src="src/js/cardsDeputados.js"></script>
+    <script src="./assets/libs/swiper-bundle/swiper-bundle.min.js"></script>
+    <script src="./assets/js/home.js"></script>
+    <script src="./assets/js/editar-cadastro.js"></script>
+    <script src="./assets/js/deletar.js"></script>
+    <script src="./assets/js/deputados.js"></script>
 
     <!-- JavaScript bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
-
+        
 </body>
 
 </html>

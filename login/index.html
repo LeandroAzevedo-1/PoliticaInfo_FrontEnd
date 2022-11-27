@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <base href="../">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./assets/libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+  <link rel="stylesheet" href="./assets/css/responsiveLogin.css">
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+  <title>Politica Info - Login</title>
+</head>
+
+<body>
+  <div class="card" id="telaLogin">
+    <img src="./assets/imagens/logo.png" class="imageLogo" alt="Logo politica info">
+
+    <div id="msgError"></div>
+    <div id="msgSucces"></div>
+
+    <div class="card-body">
+      <form name="login">
+        <div class="mb-3">
+          <label for="nome" class="form-label">
+            Nome
+          </label>
+          <input id="nome" class="form-control" type="text" aria-describedby="emailHelp" placeholder="Informe seu nome">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">
+            E-mail
+          </label>
+          <input type="email" class="form-control" id="email" placeholder="Informe seu e-mail">
+        </div>
+        <div class="d-grid gap-2">
+          <button class="btn btn-success" type="submit">
+            Entrar
+          </button>
+          <div>Não tem uma conta <a href="/cadastro" target="_blank" class="cadastre-se">cadastre-se</a></div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="footer">
+		<p class="rodape">Faculdade Impacta - 2022</p>
+	</footer>
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<script src="./assets/js/login.js"></script>
+</body>
+
+</html>
