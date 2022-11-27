@@ -12,7 +12,7 @@ async function editar(cadastroEditado) {
             },
             body: JSON.stringify(cadastroEditado)
         });
-        // Validar com o client o que a API 
+       
         const resposta = requisicao.json();
 
         return resposta;
@@ -63,20 +63,16 @@ window.addEventListener('load', () => {
 })
 
 editarForm.addEventListener('submit', (evento) => {
-    // 2.1. Impedir a atualização da página.
+    
     evento.preventDefault();
 
-    // 2.2. 
     const inputs = evento.target.elements;
     
-    // 2.2.1.
     const nome = inputs.nomeCompletoModal.value;
     const email = inputs.emailModal.value;
-
-    // 2.2.2.
+    
     const id = pegarDadosDoUsuarioNoLocalStorage().id;
 
-    // Validar com o cliente com o servidor espera receber o objeto
     const cadastroEditado = { id, nome, email }
 
     editar(cadastroEditado)
