@@ -3,14 +3,19 @@ const ENDERECO_API = 'http://localhost:8080/usuarios';
 
 const loginForm = document.forms['login'];
 
-function autenticar() {
-    try{
-      var xhttp = new XMLHttpRequest();
-      xhttp.open("POST", url, false);
-      xhttp.send();
+function autenticar(credential) {
+    try {
+        const requisicao = await fetch(ENDERECO_API, {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(credential)
+        });
 
-      console.log(xhttp.responseText);
-
+        const resposta = await requisicao.json();
+        
+        return resposta;
     }
     catch {
       alert('Erro: Tivemos problema com a comunicação com o servidor. Tente novamente em alguns minutos.');
