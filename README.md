@@ -1,6 +1,6 @@
 
 <h4 align="center"> 
-    <h1 align="center">Politica-Info-FronEnd</h1>
+    <h1 align="center">Politica-Info-FrontEnd</h1>
     <h5 align="center">FACULDADE IMPACTA DE TECNOLOGIA</h5>
 </h4>
 
