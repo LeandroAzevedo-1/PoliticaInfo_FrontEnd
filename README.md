@@ -45,7 +45,7 @@ Política;website;Indicadores;Deputados
   <h2 align="center">Descrição Técnica</h2>
   
   <p align="center">
-    O projeto será uma apresentação dos dados relacionados à política, mas
+    O projeto é uma apresentação dos dados relacionados à política, mas
     precisamente de Deputados, tais como quantidade de deputados ativos, seus
     partidos e os estados que se referem, entre outros. Utilizaremos uma API
     disponibilizada no site da câmara dos deputados para consumo dessas informações.
