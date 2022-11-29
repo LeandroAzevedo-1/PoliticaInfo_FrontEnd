@@ -6,6 +6,11 @@ async function cadastrar(cadastro) {
     try {
         const requisicao = await fetch('http://localhost:8080/usuarios', {
             method: 'POST',
+            headers:{
+                "Content-type": "application/json",
+                "Access-Control-Allow-Origin":"*",
+            },
+            
             body: JSON.stringify(cadastro)
         });
         
@@ -28,10 +33,10 @@ cadastroForm.addEventListener('submit', (evento) => {
 
     const inputs = evento.target.elements;
     
-    const nomeCompleto = inputs.nomeCompleto.value;
+    const nome = inputs.nomeCompleto.value;
     const email = inputs.email.value;
     
-    const cadastro = { nomeCompleto, email }
+    const cadastro = { nome, email }
 
     cadastrar(cadastro)
         .then(() => {
