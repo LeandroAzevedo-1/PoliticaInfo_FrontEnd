@@ -40,3 +40,15 @@ body {
     display: none;
     border-radius: 4px;
 }
+
+@media (max-width: 1920px){
+    .rodape {
+        margin-top: 10rem;
+    }
+}
+@media (max-width: 412px){
+    .rodape {
+        font-size: 14px;
+        margin-top: 5rem;
+    }
+}
