@@ -50,33 +50,23 @@
 
 /* Restul deputado  */
 .DeputadoBuscado {
+    width: 90%;
     margin-top: 20px;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    width: 100%;
+    justify-content: center;
 }
-
- .container-deputadoBusado {
+.container-deputadoBusado {
     display: flex;
-    margin: 30px;
-    width: 1050px;
+    align-items: center;
+    justify-content: center;
+    width: 75rem;
 }
 .imgBusca {
     text-align: center;
     width: 13rem;
     margin-right: 3.9rem;
     border-radius: 5px ;
-}
-.imgBusca img {
-    width: 100%;
-    object-fit: cover;
-}
-.descriscao {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    text-transform: uppercase;
 }
 .infoDeputado {
     margin-bottom: 15px;
@@ -88,17 +78,65 @@
     font-weight: 600;
     font-size: 2.3rem;
 }
-.despesasInfo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+.dadosPessoais{
+    margin-top: 1em;
 }
-.cardDespesas {
-    width: 450px;
-    margin: 20px;
-    padding: 10px;
-    height: 300px;
-    box-shadow: 0 .2rem 1.5rem rgba(0,0,0,.1);
+.TextDespesas{
+    margin: 1.1em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    width: 75rem;
+}
+.sectionDespesasCards {
+    display: flex;
+}
+.cardsDespesas {
+    border-radius: 5px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    margin: 1.2em;
+    width: 25em;
+}
+.tipoDocumento {
+    text-align: center;
+    margin: 0.3em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.infoCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 13em;
+    margin: 1rem;
+}
+.valores {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.fornecedor {
+    font-size: 1em;
+    text-transform: uppercase;
+}
+.linkDocumento {
+    background-color: #Fff;;
+    border-radius: 5px;
+    width: 15em;
+    padding-left: 3.8em;
+}
+.linkDocumento:hover {
+    color: rgb(170, 78, 78);
+}
+/* Em Produção */
+@media (max-width: 1200px) {
+    .TextDespesas{
+        width: 100%;
+        
+    }
+}
+@media (max-width: 1200px) {
 
 }
