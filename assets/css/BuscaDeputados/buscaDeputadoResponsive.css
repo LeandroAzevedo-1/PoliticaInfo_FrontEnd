@@ -1,0 +1,52 @@
+/* Em Produção */
+@media (max-width: 1200px) {
+    .TextDespesas{
+        width: 100%;
+        
+    }
+}
+@media (max-width: 325px) {
+    .container-busca {
+        width: 95%;
+    }
+    #input-busca{
+       font-size: 9px; 
+       padding: 7px;
+    }
+    .btn-buscar {
+        padding: 6px;
+        width: 90%;
+    }
+    .container-deputadoBusado {
+        flex-direction: column;
+    }
+    .imgBusca{
+        margin-right: 0;
+    }
+    .nomeCivil {
+        font-size: 1.3em;
+        margin-top: .2em;
+    }
+    .nomeEleitoral, 
+    .status, 
+    .emailDeputado {
+        font-size: .8em;
+    }
+    .TextDespesas{
+        margin: 0;
+        font-size: 1.3em;
+        padding-top: 1em;
+    }
+    .infoCard {
+        justify-content: space-around;
+    }
+    .cardsDespesas {
+        width: 90%;
+    }
+    .valores {
+        font-size: 1em;
+    }
+    .fornecedor, p {
+        font-size: .8em;
+    }
+}

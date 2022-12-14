@@ -91,10 +91,10 @@ const CardsBusca = async () => {
             </div>
   
             <div class="descriscao">
-              <h3>${nomeCivil}</h3>
-              <p>Nome Eleitoral : ${ultimoStatus.nome}</p>
+              <h3 class="nomeCivil">${nomeCivil}</h3>
+              <p class="nomeEleitoral">Nome Eleitoral : ${ultimoStatus.nome}</p>
   
-                <div>
+                <div class="status">
                   <span>Partido: ${ultimoStatus.siglaPartido}</span> | 
                   <span>Situação: Em ${ultimoStatus.situacao}</span>
                 </div>
@@ -103,7 +103,7 @@ const CardsBusca = async () => {
                     <p>Data de Nascimento: ${dataNascimento}</p>
                     <p>Original da cidade ${municipioNascimento} | Estado: ${ufNascimento}</p>
                     <p>Escolaridade: ${escolaridade}</p>
-                    <span>E-mail : ${ultimoStatus.email}</span>
+                    <span class="emailDeputado">E-mail : ${ultimoStatus.email}</span>
                   </div>
             </div>
         </div>

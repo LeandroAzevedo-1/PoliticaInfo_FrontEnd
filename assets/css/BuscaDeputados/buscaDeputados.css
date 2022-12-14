@@ -130,13 +130,3 @@
 .linkDocumento:hover {
     color: rgb(170, 78, 78);
 }
-/* Em Produção */
-@media (max-width: 1200px) {
-    .TextDespesas{
-        width: 100%;
-        
-    }
-}
-@media (max-width: 1200px) {
-
-}

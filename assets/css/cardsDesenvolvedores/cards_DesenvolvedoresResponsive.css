@@ -19,3 +19,10 @@
         width: 90%;
     }
 }
+@media (max-width: 325px) {
+    
+    .desenvolvedores-title {
+        position: relative;
+        margin-bottom: 5px;
+    }
+}
