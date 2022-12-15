@@ -5,22 +5,33 @@
     .card-dev {
         margin: 10px 10px;
     } 
+    .desenvolvedores-title {
+        margin-bottom: 35em;
+     }
 }
-@media (max-width: 850px) {
+@media (max-width: 823px) {
     .cards-desenvolvedores {
         flex-wrap: wrap;
         margin: 0;
     }
-}
-@media (max-width: 617px) {
-    .card-dev {
-        width: 90%;
+    .desenvolvedores-title {
+       margin-top: 1em;
+       margin-bottom: 48em;
+       padding: 0;
     }
 }
-@media (max-width: 325px) {
-    
+@media (max-width: 710px) {
+    .desenvolvedores-title {
+        margin-top: 2em;
+        margin-bottom: 50em;
+     }
+}
+@media (max-width: 600px) {
     .desenvolvedores-title {
         position: relative;
         margin-bottom: 5px;
+    }
+    .card-dev {
+        width: 80%;
     }
 }
