@@ -6,11 +6,9 @@
         margin: 10px 10px;
     } 
 }
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .cards-desenvolvedores {
         flex-wrap: wrap;
-    }
-    .cards-desenvolvedores {
         margin: 0;
     }
 }

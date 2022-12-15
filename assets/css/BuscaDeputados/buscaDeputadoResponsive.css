@@ -5,48 +5,91 @@
         
     }
 }
-@media (max-width: 325px) {
+@media (max-width: 850px) {
+    .nomeCivil {
+        font-size: 1.5em;
+        margin-top: .2em;
+    }
+}
+
+@media (max-width:660px) {
+    .nomeCivil {
+        font-size: 1.2em;
+        margin-top: .2em;
+    }
+    .TextDespesas{
+        margin: 0;
+        font-size: 1.5em;
+        padding-top: 1em;
+    }
+    .nomeEleitoral, 
+    .status, 
+    .emailDeputado,
+    .fornecedor, p {
+        font-size: .8em;
+    }
+}
+@media(max-width: 610px) {
+    .container-deputadoBusado {
+        flex-direction: column;
+        text-align: center;
+    }
+    .imgBusca{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .nomeCivil {
+        font-size: 1.5em;
+    }
+    .nomeEleitoral, 
+    .status, 
+    .emailDeputado,
+    .fornecedor, p {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+@media(max-width: 538px) {
     .container-busca {
         width: 95%;
     }
     #input-busca{
-       font-size: 9px; 
-       padding: 7px;
+        font-size: 9px; 
+        padding: 7px;
+     }
+     .btn-buscar {
+         padding: 6px;
+         width: 90%;
+     }
+}
+@media(max-width: 427px) {
+    .cardsDespesas {
+        width: 100%;
+        margin: 5px 0 5pxpx 0;
     }
-    .btn-buscar {
-        padding: 6px;
-        width: 90%;
+    .sectionDespesasCards {
+        width: 100%;
     }
-    .container-deputadoBusado {
-        flex-direction: column;
-    }
-    .imgBusca{
-        margin-right: 0;
-    }
+}
+@media (max-width: 380px) {
     .nomeCivil {
-        font-size: 1.3em;
-        margin-top: .2em;
+        font-size: 1.2em;
+    }
+    .TextDespesas {
+        font-size: 1.2em;
     }
     .nomeEleitoral, 
     .status, 
-    .emailDeputado {
+    .emailDeputado,
+    .fornecedor, p {
         font-size: .8em;
-    }
-    .TextDespesas{
-        margin: 0;
-        font-size: 1.3em;
-        padding-top: 1em;
+        text-align: center;
     }
     .infoCard {
         justify-content: space-around;
     }
-    .cardsDespesas {
-        width: 90%;
-    }
     .valores {
         font-size: 1em;
     }
-    .fornecedor, p {
-        font-size: .8em;
-    }
+    
 }
