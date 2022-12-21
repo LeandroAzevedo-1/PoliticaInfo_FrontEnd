@@ -58,7 +58,6 @@ const CardsBusca = async () => {
       return item;
     }
   });
-
   let createCard = returFilter.filter((item) => {
     if (inputBusca.value == item.nome) {
       return item;
@@ -113,8 +112,12 @@ const CardsBusca = async () => {
         </div>
         `;
 
+      let dataAtual = new Date()
+      let anoAtual = dataAtual.getFullYear()
+      let mesAtual = dataAtual.getMonth() + 1
+
       let uriDespesasDeputado = await fetch(
-        `https://dadosabertos.camara.leg.br/api/v2/deputados/${id}/despesas?ano=2022&mes=11&ordem=ASC`
+        `https://dadosabertos.camara.leg.br/api/v2/deputados/${id}/despesas?ano=${anoAtual}&mes=${mesAtual}&ordem=ASC`
       );
       let jsonUri = await uriDespesasDeputado.json();
       let jsonUriDadosDespesa = jsonUri.dados;
@@ -154,8 +157,7 @@ const CardsBusca = async () => {
 btnBuscar.addEventListener("click", async () => {
   let bntBusca = await BuscarDeputado();
 
-  if (bntBusca.includes(inputBusca.value)) {
-    msgSucess.innerHTML = `Buscado Deputado...`;
+  if (bntBusca.includes(inputBusca.value)) { 
     msgSucess.setAttribute("style", "color: green");
 
     setTimeout(() => {
@@ -212,7 +214,7 @@ function deputados() {
                           </li>
                       </ul>
       
-                      <a href="https://www.camara.leg.br/" target="_blank"class="button">Saiba Mais</a>
+                      <a href="https://www.camara.leg.br/" target="_blank"class="button">Portal Câmara Deputados</a>
                   </div>
                 </div>
                 `;
